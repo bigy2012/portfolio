@@ -52,7 +52,7 @@ export default function Home() {
             <h1 className="sm:text-2xl  md:text-5xl font-bold opacity-80 ">
               FrontEnd
             </h1>
-            <h1 className="md:absolute sm:hidden lg:block text-md font-normal pt-1 text-gray-600">
+            <h1 className="md:absolute sm:hidden lg:block text-md font-normal z-50 pt-1 text-gray-600">
               I am a full-stack developer with strong skills
             </h1>
           </div>
@@ -71,64 +71,27 @@ export default function Home() {
               height={700}
             />
             <Image
-              className={`sm:hidden lg:block absolute bottom-[150px] right-[30%] z-0 rounded-md transition duration-300 ease-in-out ${hoverBackend
+              className={` lg:block absolute sm:w-[80px] md:w-[180px] lg:w-[300px] sm:bottom-[435px] sm:right-[60%] 
+              md:bottom-[550px] md:right-[61%] lg:bottom-[-150px] lg:right-[63%] xl:bottom-[-180px] xl:right-[63%] z-0 
+              rounded-md transition duration-300 ease-in-out ${hoverBackend
                 ? "grayscale scale-95"
                 : ""}
                     ${hoverFrontend ? "saturate-200 scale-105" : ""}
                     `}
-              src="/logo/nodejs.png"
-              width={100}
-              height={100}
-            />
-            <Image
-              className={`sm:hidden lg:block absolute  bottom-[30px] right-[27%] z-0 rounded-md transition duration-300 ease-in-out ${hoverBackend
-                ? "grayscale scale-95"
-                : ""}
-                ${hoverFrontend ? "saturate-200 scale-105" : ""}
-                `}
-              src="/logo/postman.png"
-              width={150}
+              src="/bg/frontend.png"
+              width={300}
               height={150}
             />
             <Image
-              className={`sm:hidden lg:block absolute bottom-[-10px] right-[25%] z-0 rounded-md transition duration-300 ease-in-out ${hoverBackend
+              className={` lg:block absolute  sm:w-[80px] md:w-[180px] lg:w-[300px] sm:bottom-[435px] sm:right-[18%] 
+              md:bottom-[550px] md:right-[15%] lg:bottom-[-150px] lg:right-[18%] xl:bottom-[-180px] xl:right-[18%] z-0 
+              rounded-md transition duration-300 ease-in-out ${hoverBackend
                 ? "grayscale scale-95"
                 : ""}
-                ${hoverFrontend ? "saturate-200 scale-105" : ""}
-                `}
-              src="/logo/mysql.png"
-              width={150}
-              height={150}
-            />
-
-            <Image
-              className={`sm:hidden lg:block absolute bottom-[150px] left-[25%] z-0 rounded-md transition duration-300 ease-in-out ${hoverBackend
-                ? "grayscale scale-95"
-                : ""}
-    ${hoverFrontend ? "saturate-200 scale-105" : ""}
-    `}
-              src="/logo/nextjs.png"
-              width={150}
-              height={150}
-            />
-            <Image
-              className={`sm:hidden lg:block absolute bottom-[80px] left-[28%] z-0 rounded-md transition duration-300 ease-in-out ${hoverBackend
-                ? "grayscale scale-95"
-                : ""}
-                ${hoverFrontend ? "saturate-200 scale-105" : ""}
-                `}
-              src="/logo/vue.png"
-              width={70}
-              height={100}
-            />
-            <Image
-              className={`sm:hidden lg:block absolute bottom-[-10px] left-[27%]  z-0 rounded-md transition duration-300 ease-in-out ${hoverBackend
-                ? "grayscale scale-95"
-                : ""}
-                ${hoverFrontend ? "saturate-200 scale-105" : ""}
-                `}
-              src="/logo/react.png"
-              width={150}
+                    ${hoverFrontend ? "saturate-200 scale-105" : ""}
+                    `}
+              src="/bg/backend.png"
+              width={300}
               height={150}
             />
           </div>
@@ -151,17 +114,17 @@ export default function Home() {
       </div>
 
       <div className="lg:px-56 lg:py-40 m-auto ">
-        <div className="relative border border-gray-200 z-0" />
-        <div className="absolute left-[43%] flex justify-center mt-[-15px] z-50 bg-white px-10">
+        <div className="relative sm:hidden lg:block border border-gray-200 z-0" />
+        <div className="absolute sm:hidden lg:block left-[43%] flex justify-center mt-[-15px] z-50 bg-white px-10">
           <h1>SOME OF MY LATEST WORK</h1>
         </div>
-        <div className="flex justify-center mt-5">
+        <div className="sm:block sm:mt-5 lg:flex lg:justify-center mt-5">
           {userData.map(project =>
             <Work
               id={project.id}
               // image="/logo/ecom.png"
               image={project.projectImage}
-              route={project.projectRoute + '/' + project.projectName}
+              route={project.projectRoute + "/" + project.projectName}
               description={project.projectDescription}
               name={project.projectName}
             />

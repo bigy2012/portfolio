@@ -11,7 +11,7 @@ export default function Home({ children }) {
       </Head>
       <Navbar/>
       {children}
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   );
 }

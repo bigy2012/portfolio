@@ -5,8 +5,8 @@ export default function Work({ id, image, name, description, route }) {
   return (
     <div key={id}>
       <Link href={route}>
-        <div className="w-[300px] h-[300px] mx-3">
-          <div className="border-gray-200 border rounded-lg  shadow-md hover:shadow-xl">
+        <div className="sm:w-full  lg:w-[400px] lg:h-[300px] lg:mx-3 sm:px-3 sm:mt-5">
+          <div className="border-gray-200  border rounded-lg  shadow-md hover:shadow-xl">
             <div className="p-2">
               <Image
                 src={image}

@@ -23,7 +23,7 @@ async function fetchContractFirebase() {
   return data;
 }
 
-export default function Contract() {
+export default function Portfolio() {
   const [hoverBackend, setHoverBackend] = useState(false); // Track hover state
   const [hoverFrontend, setHoverFrontend] = useState(false); // Track hover state
   const handleHoverBackend = () => setHoverBackend(!hoverBackend);
@@ -45,30 +45,12 @@ export default function Contract() {
       <div className="sm:px-5 lg:px-56 lg:py-5 flex lg:justify-between bg-white shadow-lg z-50">
         <div className="w-[50%] m-auto text-center">
           <h1 className="sm:text-2xl  md:text-7xl font-bold opacity-80 ">
-            Contract
+            Portfolio.
           </h1>
           <h1 className="sm:hidden lg:inline-block text-xl font-normal pt-3 text-gray-600">
-            Get in touch with me via social media or email.
+            I used to work in a startup company. Product management company
+            Including website and app design systems.
           </h1>
-
-          <div className="mt-10">
-            <div className="w-[50%] inline-block font-bold">
-              <Link
-                target={"_blank"}
-                href="https://github.com/bigy2012"
-              >
-                <GithubIcon className="w-14 inline-block" /> Github
-              </Link>
-            </div>
-            <div className="w-[50%] inline-block font-bold">
-              <Link
-                target={"_blank"}
-                href="https://www.facebook.com/wasaniy121A/"
-              >
-                <FaceBook className="w-14 inline-block" /> FaceBook
-              </Link>
-            </div>
-          </div>
         </div>
 
         <div className="w-[50%] flex justify-center ">
@@ -83,28 +65,26 @@ export default function Contract() {
         </div>
       </div>
 
-      <div className="sm:px-5 sm:mt-5 lg:px-56 lg:py-10 bg-gray-50 z-0">
-        <form method="POST">
-          <h1 className="sm:text-2xl  md:text-4xl font-medium opacity-80 ">
-            Send me an email
-          </h1>
-          <div className="mt-5 w-[100%]">
-            <h1>Name</h1>
-            <input type="text" className="border sm:w-[100%] lg:w-[100%] p-2 text-black" name="full_name" />
-          </div>
-          <div className="mt-5 w-[100%]">
-            <h1>Email</h1>
-            <input type="email" className="border sm:w-[100%] lg:w-[100%]  p-2 text-black" name="email" />
-          </div>
-          <div className="mt-5">
-            <h1>Message</h1>
-            <textarea name="message" className="border sm:w-[100%] lg:w-[100%]  p-2 text-black" />
-          </div>
-          <div className="mt-5 sm:flex sm:justify-center lg:block">
-            <button type="submit" className="bg-black text-white font-bold border p-4 rounded-lg">Send Email</button>
-          </div>
-        </form>
+
+      <div className="lg:px-56 lg:py-20 mb-40">
+        <div className="relative sm:hidden lg:block border border-gray-200 z-0" />
+        <div className="absolute sm:hidden lg:block left-[43%] flex justify-center mt-[-15px] z-50 bg-white px-10">
+          <h1>SOME OF MY LATEST WORK</h1>
+        </div>
+        <div className="sm:block sm:mt-5 lg:flex lg:justify-center mt-5">
+          {userData.map(project =>
+            <Work
+              id={project.id}
+              // image="/logo/ecom.png"
+              image={project.projectImage}
+              route={project.projectRoute + "/" + project.projectName}
+              description={project.projectDescription}
+              name={project.projectName}
+            />
+          )}
+        </div>
       </div>
+
     </div>
   );
 }
