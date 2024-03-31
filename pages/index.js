@@ -1,24 +1,49 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import Skill from "@/components/Skill";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Work from "@/components/Work";
-
+import db from "./firebaseConfig";
+import { collection, getDocs } from "firebase/firestore";
 const inter = Inter({ subsets: ["latin"] });
+
+async function fetchProjectsFromFirebase() {
+  const querySnapshot = await getDocs(collection(db, "projects"));
+
+  let data = [];
+  querySnapshot.forEach(doc => {
+    data.push({
+      id: doc.id,
+      ...doc.data()
+    });
+  });
+
+  return data;
+}
 
 export default function Home() {
   const [hoverBackend, setHoverBackend] = useState(false); // Track hover state
   const [hoverFrontend, setHoverFrontend] = useState(false); // Track hover state
-
   const handleHoverBackend = () => setHoverBackend(!hoverBackend);
   const handleHoverFrontend = () => setHoverFrontend(!hoverFrontend);
+
+  let [userData, setUserdata] = useState([]);
+
+  useEffect(() => {
+    async function fetchData() {
+      const data = await fetchProjectsFromFirebase();
+      setUserdata(data);
+    }
+    fetchData();
+    console.log(userData);
+  }, []);
 
   return (
     <div>
       <div className="sm:px-3 lg:px-56 lg:py-5 flex lg:justify-between bg-gray-50 shadow-md">
         <Link
-          href="/work/backend"
+          href="/skill/frontend"
           className="m-auto "
           onMouseEnter={handleHoverFrontend}
           onMouseLeave={handleHoverFrontend}
@@ -109,7 +134,7 @@ export default function Home() {
           </div>
         </div>
 
-        <Link href="/work/backend" className="m-auto">
+        <Link href="/skill/backend" className="m-auto">
           <div
             className="w-[50%]"
             onMouseEnter={handleHoverBackend}
@@ -125,8 +150,23 @@ export default function Home() {
         </Link>
       </div>
 
-      <div className="lg:px-56 lg:py-40 m-auto flex justify-center ">
-        <Work image="/logo/ecom.png" route="" description="e-commerce" name="Paxy" />
+      <div className="lg:px-56 lg:py-40 m-auto ">
+        <div className="relative border border-gray-200 z-0" />
+        <div className="absolute left-[43%] flex justify-center mt-[-15px] z-50 bg-white px-10">
+          <h1>SOME OF MY LATEST WORK</h1>
+        </div>
+        <div className="flex justify-center mt-5">
+          {userData.map(project =>
+            <Work
+              id={project.id}
+              // image="/logo/ecom.png"
+              image={project.projectImage}
+              route={project.projectRoute + '/' + project.projectName}
+              description={project.projectDescription}
+              name={project.projectName}
+            />
+          )}
+        </div>
       </div>
     </div>
   );

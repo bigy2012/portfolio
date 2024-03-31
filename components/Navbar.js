@@ -49,6 +49,12 @@ export default function Navbar() {
           >
             Work
           </Link>
+          <Link
+            href="/contract"
+            className="text-md font-medium mx-3 hover:text-green-400  hover:border-b-2 hover:border-green-400 hover:scale-105"
+          >
+            Contract
+          </Link>
         </div>
         <div>
           <h1 className="text-2xl font-bold hover:text-green-400 hover:scale-105">Portfolio</h1>

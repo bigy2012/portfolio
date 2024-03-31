@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Work({ image, name, description, route }) {
+export default function Work({ id, image, name, description, route }) {
   return (
-    <div>
+    <div key={id}>
       <Link href={route}>
         <div className="w-[300px] h-[300px] mx-3">
           <div className="border-gray-200 border rounded-lg  shadow-md hover:shadow-xl">
