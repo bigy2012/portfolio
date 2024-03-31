@@ -1,0 +1,9 @@
+/* styles.module.css */
+.image {
+    rounded-lg;
+  }
+  
+  .grayscale {
+    filter: grayscale;
+  }
+  
