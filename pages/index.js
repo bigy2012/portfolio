@@ -41,7 +41,7 @@ export default function Home() {
 
   return (
     <div>
-      <div className="sm:px-3 lg:px-56 lg:py-5 flex lg:justify-between bg-gray-50 shadow-md">
+      <div className="sm:px-3 lg:px-56 lg:py-5 lg:flex lg:justify-between bg-gray-50 shadow-md">
         <Link
           href="/skill/frontend"
           className="m-auto "
@@ -53,7 +53,10 @@ export default function Home() {
               FrontEnd
             </h1>
             <h1 className="md:absolute sm:hidden lg:block text-md font-normal z-50 pt-1 text-gray-600">
-              I am a full-stack developer with strong skills
+              I have average to average front-end skills. 
+              <br/>
+              Decorated can work
+              according to needs very well.
             </h1>
           </div>
         </Link>
@@ -107,7 +110,7 @@ export default function Home() {
               BackEnd
             </h1>
             <h1 className="md:absolute sm:hidden lg:block text-md font-normal pt-1  text-gray-600">
-              I am a full-stack developer with strong skills
+              I have average backend skills, able to work as required.
             </h1>
           </div>
         </Link>
