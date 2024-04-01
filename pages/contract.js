@@ -57,7 +57,7 @@ export default function Contract() {
                 target={"_blank"}
                 href="https://github.com/bigy2012"
               >
-                <GithubIcon className="w-14 inline-block" /> Github
+                <GithubIcon className="w-12 inline-block" /> Github
               </Link>
             </div>
             <div className="w-[50%] inline-block font-bold">
@@ -65,7 +65,7 @@ export default function Contract() {
                 target={"_blank"}
                 href="https://www.facebook.com/wasaniy121A/"
               >
-                <FaceBook className="w-14 inline-block" /> FaceBook
+                <FaceBook className="w-12 inline-block" /> FaceBook
               </Link>
             </div>
           </div>

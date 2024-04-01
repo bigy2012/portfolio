@@ -25,6 +25,67 @@ export default function Frontend() {
           </div>
         </div>
       </div>
+
+      <div className="sm:px-5 lg:px-56 py-5 ">
+        <div className="sm:px-5 lg:px-56 lg:py-5">
+          <h1 className="text-2xl font-bold">My language skill</h1>
+          <h1 className="mt-5">
+            <span className="font-bold">HTML </span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+            perferendis ab culpa fuga ipsam facere vitae ad, deleniti nostrum
+            doloremque sed, porro totam, inventore harum assumenda impedit?
+            Facere, nesciunt earum!
+          </h1>
+          <h1 className="mt-5">
+            <span className="font-bold">CSS </span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+            perferendis ab culpa fuga ipsam facere vitae ad, deleniti nostrum
+            doloremque sed, porro totam, inventore harum assumenda impedit?
+            Facere, nesciunt earum!
+          </h1>
+          <h1 className="mt-5">
+            <span className="font-bold">Javascript </span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+            perferendis ab culpa fuga ipsam facere vitae ad, deleniti nostrum
+            doloremque sed, porro totam, inventore harum assumenda impedit?
+            Facere, nesciunt earum!
+          </h1>
+        </div>
+      </div>
+
+      <div className="bg-white shadow-lg sm:px-5 lg:px-56 py-5">
+        <div className="sm:px-5 lg:px-56 lg:py-5  text-end">
+          <h1 className="text-2xl font-bold">My framework & library skill</h1>
+          <h1 className="mt-5">
+            <span className="font-bold">Next js </span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+            perferendis ab culpa fuga ipsam facere vitae ad, deleniti nostrum
+            doloremque sed, porro totam, inventore harum assumenda impedit?
+            Facere, nesciunt earum!
+          </h1>
+          <h1 className="mt-5">
+            <span className="font-bold">Vue js </span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+            perferendis ab culpa fuga ipsam facere vitae ad, deleniti nostrum
+            doloremque sed, porro totam, inventore harum assumenda impedit?
+            Facere, nesciunt earum!
+          </h1>
+          <h1 className="mt-5">
+            <span className="font-bold">Bootstrap 4-5 </span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+            perferendis ab culpa fuga ipsam facere vitae ad, deleniti nostrum
+            doloremque sed, porro totam, inventore harum assumenda impedit?
+            Facere, nesciunt earum!
+          </h1>
+          <h1 className="mt-5">
+            <span className="font-bold">Tailwind css </span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+            perferendis ab culpa fuga ipsam facere vitae ad, deleniti nostrum
+            doloremque sed, porro totam, inventore harum assumenda impedit?
+            Facere, nesciunt earum!
+          </h1>
+        </div>
+      </div>
     </div>
   );
 }

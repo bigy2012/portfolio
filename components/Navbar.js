@@ -57,7 +57,9 @@ export default function Navbar() {
           </Link>
         </div>
         <div>
-          <h1 className="text-2xl font-bold hover:text-green-400 hover:scale-105">Bigy</h1>
+          <h1 className="text-2xl font-bold hover:text-green-400 hover:scale-105">
+            Bigy
+          </h1>
         </div>
         <div className="flex items-center justify-end  flex-wrap ">
           <motion.a
@@ -120,11 +122,20 @@ export default function Navbar() {
               </li>
               <li className="mb-1">
                 <Link
-                  href="/work"
+                  href="/portfolio"
                   className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
                   onClick={handleClose}
                 >
-                  Work
+                  Portfolio
+                </Link>
+              </li>
+              <li className="mb-1">
+                <Link
+                  href="/contract"
+                  className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                  onClick={handleClose}
+                >
+                  Contract
                 </Link>
               </li>
             </ul>

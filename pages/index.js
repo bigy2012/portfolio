@@ -41,22 +41,21 @@ export default function Home() {
 
   return (
     <div>
-      <div className="sm:px-3 lg:px-56 lg:py-5 lg:flex lg:justify-between bg-gray-50 shadow-md">
+      <div className="sm:px-3 lg:px-56 lg:py-5 md:flex md:justify-between bg-gray-50 shadow-md">
         <Link
           href="/skill/frontend"
-          className="m-auto "
+          className="m-auto sm:hidden md:block"
           onMouseEnter={handleHoverFrontend}
           onMouseLeave={handleHoverFrontend}
         >
-          <div className="w-[50%]  frontend">
+          <div className="w-[50%] frontend">
             <h1 className="sm:text-2xl  md:text-5xl font-bold opacity-80 ">
               FrontEnd
             </h1>
-            <h1 className="md:absolute sm:hidden lg:block text-md font-normal z-50 pt-1 text-gray-600">
-              I have average to average front-end skills. 
-              <br/>
-              Decorated can work
-              according to needs very well.
+            <h1 className="md:absolute text-md font-normal z-20 pt-1 text-gray-600">
+              I have average to average front-end skills.
+              <br />
+              Decorated can work according to needs very well.
             </h1>
           </div>
         </Link>
@@ -64,43 +63,19 @@ export default function Home() {
         <div className="flex justify-center ">
           <div className="flex justify-center text-center  ">
             <Image
-              className={`relative rounded-md z-10 transition duration-300 ease-in-out ${hoverBackend
+              className={`relative  rounded-md z-10 transition duration-300 ease-in-out ${hoverBackend
                 ? "grayscale scale-95"
                 : ""}
                 ${hoverFrontend ? "saturate-200 scale-105" : ""}
                 `}
-              src="/profile/big.png"
+              src="/profile/bg_big.png"
               width={700}
               height={700}
-            />
-            <Image
-              className={` lg:block absolute sm:w-[80px] md:w-[180px] lg:w-[300px] sm:bottom-[435px] sm:right-[60%] 
-              md:bottom-[550px] md:right-[61%] lg:bottom-[-150px] lg:right-[63%] xl:bottom-[-180px] xl:right-[63%] z-0 
-              rounded-md transition duration-300 ease-in-out ${hoverBackend
-                ? "grayscale scale-95"
-                : ""}
-                    ${hoverFrontend ? "saturate-200 scale-105" : ""}
-                    `}
-              src="/bg/frontend.png"
-              width={300}
-              height={150}
-            />
-            <Image
-              className={` lg:block absolute  sm:w-[80px] md:w-[180px] lg:w-[300px] sm:bottom-[435px] sm:right-[18%] 
-              md:bottom-[550px] md:right-[15%] lg:bottom-[-150px] lg:right-[18%] xl:bottom-[-180px] xl:right-[18%] z-0 
-              rounded-md transition duration-300 ease-in-out ${hoverBackend
-                ? "grayscale scale-95"
-                : ""}
-                    ${hoverFrontend ? "saturate-200 scale-105" : ""}
-                    `}
-              src="/bg/backend.png"
-              width={300}
-              height={150}
             />
           </div>
         </div>
 
-        <Link href="/skill/backend" className="m-auto">
+        <Link href="/skill/backend" className="m-auto sm:hidden md:block">
           <div
             className="w-[50%]"
             onMouseEnter={handleHoverBackend}
@@ -109,19 +84,56 @@ export default function Home() {
             <h1 className="sm:text-2xl  md:text-5xl font-bold opacity-80 ">
               BackEnd
             </h1>
-            <h1 className="md:absolute sm:hidden lg:block text-md font-normal pt-1  text-gray-600">
+            <h1 className="md:absolute sm:hidden md:block text-md font-normal pt-1  text-gray-600">
               I have average backend skills, able to work as required.
             </h1>
           </div>
         </Link>
       </div>
 
-      <div className="lg:px-56 lg:py-40 m-auto ">
-        <div className="relative sm:hidden lg:block border border-gray-200 z-0" />
-        <div className="absolute sm:hidden lg:block left-[43%] flex justify-center mt-[-15px] z-50 bg-white px-10">
+      <div className="hidden sm:block p-3 text-blue-600">
+        <Link
+          href="/skill/frontend"
+          className="m-auto md:hidden"
+          onMouseEnter={handleHoverFrontend}
+          onMouseLeave={handleHoverFrontend}
+        >
+          <div className="mt-3 text-end">
+            <h1 className="sm:text-2xl   font-bold opacity-80 ">
+              FrontEnd
+            </h1>
+            <h1 className="md:absolute text-md  font-normal z-20 pt-1">
+              I have average to average front-end skills.
+              <br />
+              Decorated can work according to needs very well.
+            </h1>
+          </div>
+        </Link>
+
+        <div className="relative sm:block border md:hidden border-gray-200 z-0 my-5" />
+
+        <Link href="/skill/backend" className="m-auto md:hidden">
+          <div
+            onMouseEnter={handleHoverBackend}
+            onMouseLeave={handleHoverBackend}
+          >
+            <h1 className="sm:text-2xl  md:text-5xl font-bold opacity-80 ">
+              BackEnd
+            </h1>
+            <h1 className="md:absolute md:block text-md font-normal pt-1 ">
+              I have average backend skills, able to work as required.
+            </h1>
+          </div>
+        </Link>
+        <div className="relative sm:block border border-gray-200 md:hidden z-0 my-5" />
+      </div>
+
+      <div className="lg:px-56 lg:py-40 sm:px-3 sm:py-10 m-auto ">
+        <div className="relative sm:block border border-gray-200 z-0" />
+        <div className="absolute sm:block lg:left-[43%]  lg:flex lg:justify-center mt-[-15px] z-20 bg-white px-10">
           <h1>SOME OF MY LATEST WORK</h1>
         </div>
-        <div className="sm:block sm:mt-5 lg:flex lg:justify-center mt-5">
+        <div className="sm:block sm:mt-5 md:inline-block md:justify-center mt-5">
           {userData.map(project =>
             <Work
               id={project.id}
