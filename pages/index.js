@@ -4,7 +4,7 @@ import Skill from "@/components/Skill";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Work from "@/components/Work";
-import db from "./api/firebaseConfig";
+import db from "../components/firebaseConfig";
 import { collection, getDocs } from "firebase/firestore";
 const inter = Inter({ subsets: ["latin"] });
 
