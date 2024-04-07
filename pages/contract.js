@@ -52,21 +52,22 @@ export default function Contract() {
           </h1>
 
           <div className="mt-10">
-            <div className="w-[50%] inline-block font-bold">
-              <Link target={"_blank"} href="https://github.com/bigy2012">
+            <div className="inline-block font-bold">
+              <Link target={"_blank"} href="https://github.com/bigy2012" className="w-[50px] inline-block mx-10">
                 <GithubIcon className="w-[50px] inline-block" /> Github
               </Link>
             </div>
-            <div className="w-[50%] inline-block font-bold">
+            <div className="inline-block font-bold">
               <Link
                 target={"_blank"}
+                className="w-[50px] inline-block mx-10"
                 href="https://www.facebook.com/wasaniy121A/"
               >
                 <FaceBook className="w-[50px] inline-block" /> FaceBook
               </Link>
             </div>
-            <div className="w-[50%] inline-block font-bold">
-              <Link target={"_blank"} href="https://line.me/ti/p/X3CLZeSGw9">
+            <div className="inline-block font-bold">
+              <Link target={"_blank"} href="https://line.me/ti/p/X3CLZeSGw9" className="w-[50px] inline-block mx-10">
                 <Line className="w-[50px] inline-block" /> Line
               </Link>
             </div>
