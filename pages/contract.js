@@ -6,7 +6,7 @@ import Link from "next/link";
 import Work from "@/components/Work";
 import db from "./firebaseConfig";
 import { collection, getDocs } from "firebase/firestore";
-import { FaceBook, GithubIcon } from "@/components/Icons";
+import { FaceBook, GithubIcon, Line } from "@/components/Icons";
 const inter = Inter({ subsets: ["latin"] });
 
 async function fetchContractFirebase() {
@@ -53,11 +53,8 @@ export default function Contract() {
 
           <div className="mt-10">
             <div className="w-[50%] inline-block font-bold">
-              <Link
-                target={"_blank"}
-                href="https://github.com/bigy2012"
-              >
-                <GithubIcon className="w-12 inline-block" /> Github
+              <Link target={"_blank"} href="https://github.com/bigy2012">
+                <GithubIcon className="w-12 h-12 inline-block" /> Github
               </Link>
             </div>
             <div className="w-[50%] inline-block font-bold">
@@ -65,7 +62,12 @@ export default function Contract() {
                 target={"_blank"}
                 href="https://www.facebook.com/wasaniy121A/"
               >
-                <FaceBook className="w-12 inline-block" /> FaceBook
+                <FaceBook className="w-12 h-12 inline-block" /> FaceBook
+              </Link>
+            </div>
+            <div className="w-[50%] inline-block font-bold">
+              <Link target={"_blank"} href="https://line.me/ti/p/X3CLZeSGw9">
+                <Line className="w-12 h-12 inline-block" /> Line
               </Link>
             </div>
           </div>
@@ -90,18 +92,34 @@ export default function Contract() {
           </h1>
           <div className="mt-5 w-[100%]">
             <h1>Name</h1>
-            <input type="text" className="border sm:w-[100%] lg:w-[100%] p-2 text-black" name="full_name" />
+            <input
+              type="text"
+              className="border sm:w-[100%] lg:w-[100%] p-2 text-black"
+              name="full_name"
+            />
           </div>
           <div className="mt-5 w-[100%]">
             <h1>Email</h1>
-            <input type="email" className="border sm:w-[100%] lg:w-[100%]  p-2 text-black" name="email" />
+            <input
+              type="email"
+              className="border sm:w-[100%] lg:w-[100%]  p-2 text-black"
+              name="email"
+            />
           </div>
           <div className="mt-5">
             <h1>Message</h1>
-            <textarea name="message" className="border sm:w-[100%] lg:w-[100%]  p-2 text-black" />
+            <textarea
+              name="message"
+              className="border sm:w-[100%] lg:w-[100%]  p-2 text-black"
+            />
           </div>
           <div className="mt-5 sm:flex sm:justify-center lg:block">
-            <button type="submit" className="bg-black text-white font-bold border p-4 rounded-lg">Send Email</button>
+            <button
+              type="submit"
+              className="bg-black text-white font-bold border p-4 rounded-lg"
+            >
+              Send Email
+            </button>
           </div>
         </form>
       </div>

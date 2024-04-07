@@ -30,25 +30,48 @@ export default function Frontend() {
         <div className="sm:px-5 lg:px-56 lg:py-5">
           <h1 className="text-2xl font-bold">My language skill</h1>
           <h1 className="mt-5">
+            <div className="flex justify-center">
+              <Image
+                className="relative rounded-md"
+                src="/logo/html.png"
+                width={100}
+                height={100}
+              />
+            </div>
             <span className="font-bold">HTML </span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-            perferendis ab culpa fuga ipsam facere vitae ad, deleniti nostrum
-            doloremque sed, porro totam, inventore harum assumenda impedit?
-            Facere, nesciunt earum!
+            Ability is at an advanced level Able to work according to needs very
+            well Highly flexible Whether it's fixing a problem or starting a new
+            one, it can be done.
           </h1>
           <h1 className="mt-5">
+            <div className="flex justify-center">
+              <Image
+                className="relative rounded-md"
+                src="/logo/css.png"
+                width={100}
+                height={100}
+              />
+            </div>
             <span className="font-bold">CSS </span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-            perferendis ab culpa fuga ipsam facere vitae ad, deleniti nostrum
-            doloremque sed, porro totam, inventore harum assumenda impedit?
-            Facere, nesciunt earum!
+            The ability is at a high level. Able to work according to needs very
+            well Highly flexible Either fix the problem or start over. and can
+            be used with other frameworks or libraries such as Tailwind css,
+            Bootstrap 4-5 etc.
           </h1>
           <h1 className="mt-5">
+            <div className="flex justify-center">
+              <Image
+                className="relative rounded-md"
+                src="/logo/js.png"
+                width={100}
+                height={100}
+              />
+            </div>
             <span className="font-bold">Javascript </span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-            perferendis ab culpa fuga ipsam facere vitae ad, deleniti nostrum
-            doloremque sed, porro totam, inventore harum assumenda impedit?
-            Facere, nesciunt earum!
+            The ability is at a high level. Able to work according to needs very
+            well Highly flexible Either fix the problem or start over. and can
+            be used with other frameworks or libraries such as jquery, react,
+            nextjs, etc.
           </h1>
         </div>
       </div>
@@ -57,32 +80,60 @@ export default function Frontend() {
         <div className="sm:px-5 lg:px-56 lg:py-5  text-end">
           <h1 className="text-2xl font-bold">My framework & library skill</h1>
           <h1 className="mt-5">
+            <div className="flex justify-center">
+              <Image
+                className="relative rounded-md"
+                src="/logo/next-js.png"
+                width={100}
+                height={100}
+              />
+            </div>
             <span className="font-bold">Next js </span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-            perferendis ab culpa fuga ipsam facere vitae ad, deleniti nostrum
-            doloremque sed, porro totam, inventore harum assumenda impedit?
-            Facere, nesciunt earum!
+            The ability is at a medium level. Able to work according to needs
+            very well Highly flexible Either fix the problem or start over. and
+            always ready to learn and be open to new knowledge
           </h1>
           <h1 className="mt-5">
+            <div className="flex justify-center">
+              <Image
+                className="relative rounded-md"
+                src="/logo/vue.png"
+                width={100}
+                height={100}
+              />
+            </div>
             <span className="font-bold">Vue js </span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-            perferendis ab culpa fuga ipsam facere vitae ad, deleniti nostrum
-            doloremque sed, porro totam, inventore harum assumenda impedit?
-            Facere, nesciunt earum!
+            The ability is at a medium level. Able to work according to needs
+            very well Highly flexible Either fix the problem or start over. and
+            always ready to learn and be open to new knowledge
           </h1>
           <h1 className="mt-5">
+            <div className="flex justify-center">
+              <Image
+                className="relative rounded-md"
+                src="/logo/bootstrap.png"
+                width={100}
+                height={100}
+              />
+            </div>
             <span className="font-bold">Bootstrap 4-5 </span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-            perferendis ab culpa fuga ipsam facere vitae ad, deleniti nostrum
-            doloremque sed, porro totam, inventore harum assumenda impedit?
-            Facere, nesciunt earum!
+            The ability is at a high level. Able to work according to needs very
+            well Highly flexible Either fix the problem or start over. and
+            always ready to learn and be open to new knowledge
           </h1>
           <h1 className="mt-5">
+            <div className="flex justify-center">
+              <Image
+                className="relative rounded-md"
+                src="/logo/tailwind.png"
+                width={100}
+                height={100}
+              />
+            </div>
             <span className="font-bold">Tailwind css </span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-            perferendis ab culpa fuga ipsam facere vitae ad, deleniti nostrum
-            doloremque sed, porro totam, inventore harum assumenda impedit?
-            Facere, nesciunt earum!
+            The ability is at a high level. Able to work according to needs very
+            well Highly flexible Either fix the problem or start over. and
+            always ready to learn and be open to new knowledge
           </h1>
         </div>
       </div>

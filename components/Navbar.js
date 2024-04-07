@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { GithubIcon, MoonIcon, SunIcon, FaceBook } from "./Icons";
+import { GithubIcon, MoonIcon, SunIcon, FaceBook, Line } from "./Icons";
 import { motion } from "framer-motion";
 import useThemeSwitcher from "./hook/useThemeSwitcher";
 import React, { useState, useRef } from "react";
@@ -79,6 +79,15 @@ export default function Navbar() {
             className="w-8 mr-3"
           >
             <FaceBook />
+          </motion.a>
+          <motion.a
+            href="https://line.me/ti/p/X3CLZeSGw9"
+            target={"_blank"}
+            whileHover={{ y: -4 }}
+            whileTap={{ scale: 0.9 }}
+            className="w-8 mr-3"
+          >
+            <Line className="w-12 h-12 inline-block" />
           </motion.a>
         </div>
       </div>

@@ -77,7 +77,7 @@ export default function Portfolio() {
               id={project.id}
               // image="/logo/ecom.png"
               image={project.projectImage}
-              route={project.projectRoute + "/" + project.projectName}
+              route={project.projectRoute}
               description={project.projectDescription}
               name={project.projectName}
             />

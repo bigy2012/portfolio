@@ -29,25 +29,47 @@ export default function Backend() {
         <div className="sm:px-5 lg:px-56 lg:py-5">
           <h1 className="text-2xl font-bold">My language skill</h1>
           <h1 className="mt-5">
+            <div className="flex justify-center">
+              <Image
+                className="relative rounded-md"
+                src="/logo/php.png"
+                width={100}
+                height={100}
+              />
+            </div>
             <span className="font-bold">PHP </span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-            perferendis ab culpa fuga ipsam facere vitae ad, deleniti nostrum
-            doloremque sed, porro totam, inventore harum assumenda impedit?
-            Facere, nesciunt earum!
+            It's the language I'm most comfortable with. The ability is at a
+            high level. Able to work according to needs very well Highly
+            flexible Either fix the problem or start over. and always ready to
+            learn and be open to new knowledge.
           </h1>
           <h1 className="mt-5">
-            <span className="font-bold">Javascript </span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-            perferendis ab culpa fuga ipsam facere vitae ad, deleniti nostrum
-            doloremque sed, porro totam, inventore harum assumenda impedit?
-            Facere, nesciunt earum!
+            <div className="flex justify-center">
+              <Image
+                className="relative rounded-md"
+                src="/logo/nodejs.png"
+                width={100}
+                height={100}
+              />
+            </div>
+            <span className="font-bold">nodejs or Javascript </span>
+            The ability is at a high level. Able to work according to needs very
+            well Highly flexible Either fix the problem or start over. and
+            always ready to learn and be open to new knowledge.
           </h1>
           <h1 className="mt-5">
+            <div className="flex justify-center">
+              <Image
+                className="relative rounded-md"
+                src="/logo/python.png"
+                width={100}
+                height={100}
+              />
+            </div>
             <span className="font-bold">Python </span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-            perferendis ab culpa fuga ipsam facere vitae ad, deleniti nostrum
-            doloremque sed, porro totam, inventore harum assumenda impedit?
-            Facere, nesciunt earum!
+            The ability is at a medium level. Able to work according to needs
+            very well Highly flexible Either fix the problem or start over. and
+            always ready to learn and be open to new knowledge.
           </h1>
         </div>
       </div>
@@ -56,25 +78,46 @@ export default function Backend() {
         <div className="sm:px-5 lg:px-56 lg:py-5  text-end">
           <h1 className="text-2xl font-bold">My framework skill</h1>
           <h1 className="mt-5">
+            <div className="flex justify-center">
+              <Image
+                className="relative rounded-md"
+                src="/logo/laravel.png"
+                width={100}
+                height={100}
+              />
+            </div>
             <span className="font-bold">Laravel </span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-            perferendis ab culpa fuga ipsam facere vitae ad, deleniti nostrum
-            doloremque sed, porro totam, inventore harum assumenda impedit?
-            Facere, nesciunt earum!
+            The ability is at a medium level. Able to work according to needs
+            very well Highly flexible Either fix the problem or start over. and
+            always ready to learn and be open to new knowledge.
           </h1>
           <h1 className="mt-5">
+            <div className="flex justify-center">
+              <Image
+                className="relative rounded-md"
+                src="/logo/opencart.png"
+                width={100}
+                height={100}
+              />
+            </div>
             <span className="font-bold">Opencart </span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-            perferendis ab culpa fuga ipsam facere vitae ad, deleniti nostrum
-            doloremque sed, porro totam, inventore harum assumenda impedit?
-            Facere, nesciunt earum!
+            The ability is at a medium level. Able to work according to needs
+            very well Highly flexible Either fix the problem or start over. and
+            always ready to learn and be open to new knowledge.
           </h1>
           <h1 className="mt-5">
+            <div className="flex justify-center">
+              <Image
+                className="relative rounded-md"
+                src="/logo/express.png"
+                width={100}
+                height={100}
+              />
+            </div>
             <span className="font-bold">Express </span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-            perferendis ab culpa fuga ipsam facere vitae ad, deleniti nostrum
-            doloremque sed, porro totam, inventore harum assumenda impedit?
-            Facere, nesciunt earum!
+            The ability is at a medium level. Able to work according to needs
+            very well Highly flexible Either fix the problem or start over. and
+            always ready to learn and be open to new knowledge.
           </h1>
         </div>
       </div>
