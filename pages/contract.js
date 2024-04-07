@@ -77,7 +77,7 @@ export default function Contract() {
         <div className="w-[50%] flex justify-center ">
           <div className="flex justify-center text-center  ">
             <Image
-              className="relative rounded-md z-10 transition duration-300 ease-in-out"
+              className="relative rounded-md z-10 transition sm:w-[150px] sm:h-[200px] sm:m-auto lg:w-[100%] lg:h-[100%] duration-300 ease-in-out"
               src="/profile/big.png"
               width={400}
               height={400}
